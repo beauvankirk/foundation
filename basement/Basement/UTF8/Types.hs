@@ -47,8 +47,8 @@ data CM = CM {-# UNPACK #-} !Char {-# UNPACK #-} !Char {-# UNPACK #-} !Char deri
 --
 -- For example:
 -- 'A' => U+0041  => 41          => 0x00000041
--- '€  => U+20AC  => E2 82 AC    => 0x00AC82E2
--- '𐍈' => U+10348 => F0 90 8D 88 => 0x888D90F0
+-- '(UTF8 Euro)  => U+20AC  => E2 82 AC    => 0x00AC82E2
+-- '(UTF8 Theta)' => U+10348 => F0 90 8D 88 => 0x888D90F0
 --
 newtype CharUTF8 = CharUTF8 Word32
 
